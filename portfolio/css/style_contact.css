@@ -206,6 +206,9 @@ body{
     .col-75 input[type=submit] {
         width: 100%;
     }
+    #umlogo{
+      margin-top: 10px
+    }
 }
 @media screen and (min-width:320px) {
   img{
