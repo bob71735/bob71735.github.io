@@ -1,0 +1,242 @@
+#cvContentBold {
+  font-family: Arial;
+  color: black;
+  padding: 3px;
+}
+
+#cvContent {
+  font-family: "Consolas";
+  color: #C4C4C4;
+  padding: 3px;
+  font-size: 17px;
+}
+.bio{
+  background: white;
+  margin-top: 4px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.bio h2{
+  font-weight: bold;
+  color:darkgreen;
+}
+#pojen_logo{
+  margin: 3px;
+  width:45px;
+  height:45px;
+  border-radius: 50%;
+}
+#portrait{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 200px;
+}
+.socialButton {
+  margin: 2px;
+  width:45px;
+  height:45px;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.navbar-custom {
+  background-color: #003333;
+  background: linear-gradient(to right,  rgba(0,51,51,1), rgba(0,51,51,1),rgba(100,230,255,1),rgba(0,51,51,1), rgba(0,51,51,1));
+  font-family: "Arial", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+.navbar-custom a:focus {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  color: white;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: white;
+}
+
+.navbar-custom .navbar-nav li a {
+  color: white;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #C4C4C4;
+  outline: none;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: white;
+}
+.navbar-custom .navbar-nav li.active a {
+  color: white;
+  background: #00AA88;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  color: white;
+  background: #C4C4C4;
+}
+
+.navbar-custom .navbar-brand a:hover {
+  color: #C4C4C4;
+  outline: none;
+}
+
+.mybioSection {
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+#myImg {
+	margin-left: 20px;
+	margin-top: 30px;
+}
+#umlogo{
+  margin-right: 10px;
+  width:45px;
+  height:45px;
+  border-radius: 50px;
+  background-color: white;
+  float: left;
+}
+footer {
+  color: darkblue;
+  width: 100%;
+}
+
+footer .footer-above {
+  padding-top: 10px;
+  background-color: #F0FFFF;
+}
+body > footer{
+  margin:0px;
+  padding:0px;
+  min-width:100%;
+  max-width:100%;
+  height:auto;
+}
+
+.btn-outline {
+  color: white;
+  font-size: 20px;
+  border: solid 2px white;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #18BC9C;
+  background: white;
+  border: solid 2px white;
+}
+
+.mybioStart {
+  margin-top: 50px;
+  color: #C4C4C4;
+  font-size: 20px;
+}
+
+.mybioTitle {
+  color: darkblue;
+  padding: 20px;
+  background-color: #F0FFFF;
+  font-family: "Consolas";
+  font-weight: 700;
+  border: none;
+}
+
+
+.titleButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.category {
+  color: white;
+  background: #FFD700;
+  padding: 5px;
+}
+p{
+  color:black;
+  text-align: justify;
+}
+.researchex{
+  color:black;
+}
+@media screen and (min-width:320px) {
+  img{
+    display: none;
+  }
+  p.desc {
+    display: block;
+    font-size: 50%;
+  }
+
+  #portrait{
+    float: left;
+  }
+
+}
+@media screen and (min-width: 768px) {
+    header .container {
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+  img{
+      display: block;
+      height: 50%;
+      width: 50%;
+  }
+  .navbar-header img{
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: right;
+      vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+  #portrait{
+    float: left;
+  }
+}
+@media screen and (min-width:1024px){
+
+  img{
+      display: inline-block;
+  }
+  .navbar-header img{
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+        display:block;
+        margin-left:33% ;
+        width: 50%;
+        float:none;
+        vertical-align: top;
+
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    nav{
+      left:50%;
+    }
+}

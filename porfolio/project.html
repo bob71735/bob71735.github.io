@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/style_project.css">
+    <style>
+       #map {
+        height: 320px;
+        width: 100%;
+        padding: 0px;
+       }
+       body {
+        background: linear-gradient(to bottom, rgba(240,255,255,1), rgba(240,255,255,0)), url("img/sea.jpg");
+        background-size:cover;
+       }
+    </style>
+  </head>
+<body>
+  <header>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+    <script>
+    $(document).on('click.nav','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).removeClass('in').addClass('collapse');
+      }
+    });
+    </script>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-custom">
+      <div class="container">
+        <div class="navbar-header">
+          <img onclick="location.href='index.html';" src="img/pojen_pic.jpg" alt="PoJen's logo" id="pojen_logo"/>
+          <a class="navbar-brand" href="index.html">Po-Jen Lai</a>
+
+            <button type=button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-center">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="mybio.html">About Me</a>
+            </li>
+            <li class="active">
+              <a href="project.html">Project</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" >
+    function showColor(input){
+      if (input.alt == "facebook") {
+        document.getElementById('facebookButton').src = "img/facebook_click.png";
+      } else if (input.alt == "google") {
+        document.getElementById('googleButton').src = "img/google_click.png";
+      } else if (input.alt == "linkedin") {
+        document.getElementById('linkedinButton').src = "img/linkedin_click.png";
+      } else if (input.alt == "email") {
+        document.getElementById('emailButton').src = "img/email_click.png";
+      }
+    }
+
+    function showNoColor(input){
+      if (input.alt == "facebook") {
+        document.getElementById('facebookButton').src = "img/facebook.png";
+      } else if (input.alt == "google") {
+        document.getElementById('googleButton').src = "img/google.png";
+      } else if (input.alt == "linkedin") {
+        document.getElementById('linkedinButton').src = "img/linkedin.png";
+      } else if (input.alt == "email") {
+        document.getElementById('emailButton').src = "img/email.png";
+      }
+    }
+  </script>
+    <section class="projectStart">
+
+    		<div class="row">
+                <div class="col-lg-12 text-center projectTitle">
+                    <h1 style="color:#121b5e"><b>What have I done?</b></h1>
+                </div>
+            </div>
+  <div style="height: 100%; background-color: white" >
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1">
+                    <div style="font-size: 18px">
+                      <h2 style="margin-left:25px;">Surface-based Background Completion in 3D scene</h2>
+                      <ul>
+                        <li>Restored the broken part of background in 3D models</li>
+                        <li>Achieved a better visualization and outperformed other algorithms</li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/project1.jpg" class="img-rounded img-responsive" id= "img3D" alt="3D project"><br>
+                    <div class="row">
+                		<div class="col-lg-6">
+                     <button class="projectButton" onclick="location.href='';">
+                				<i class="icon-white"></i>
+    							      <span>View Project</span>
+          					 </button>
+          				</div>
+          				<div class="col-lg-6">
+          					<button class="projectButton" onclick="location.href='';">
+                				<i class="icon-white"></i>
+    							<span>View on Github</span>
+          					</button>
+          				</div>
+          			</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1">
+                  <img src="img/project2.jpg" class="img-rounded img-responsive center-block projectImg" id= "imgC" alt="Caption2Img"><br>
+                </div>
+                <div class="col-lg-5">
+                    <div style="font-size: 18px">
+                      <h2 style="margin-left:25px;">Caption to Targeted-field Image by GAN</h2>
+                      <ul>
+                        <li>Implemented an image generator-distinguisher model using generative adversarial network</li>
+                        <li>Built an image synthesizer system which synthesizes images of animation characters from captions by utilizing the recurrent neural network sentence encoder and the generative adversarial network</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                		<div class="col-lg-6">
+                     <button class="projectButton" onclick="location.href='';">
+                				<i class="icon-white"></i>
+    							      <span>View Project</span>
+          					 </button>
+          				</div>
+          				<div class="col-lg-6">
+          					<button class="projectButton" onclick="location.href='';">
+                				<i class="icon-white"></i>
+    							<span>View on Github</span>
+          					</button>
+          				</div>
+          			</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+      </div>
+        <hr>
+    </section>
+
+    <footer>
+     <div class="footer-above">
+              <div class="container">
+                  <div class="row">
+                      <div class="footer-col col-md-4">
+                          <h3>Location</h3>
+                          <img onclick="location.href='https://www.umich.edu/';" src="img/umlogo.png" alt="umlogo" id="umlogo">
+                          <p>University of Michigan
+                              <br>Ann Arbor, Michigan</p>
+                      </div>
+                      <div class="footer-col col-md-4">
+                          <h3>Contact</h3>
+                          <ul class="list-inline">
+                              <li>
+                                  <img onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.facebook.com/bob.lai.98';" src="img/facebook.png" class="socialButton" alt="facebook" id="facebookButton" />
+                              </li>
+                              <li>
+                                  <img onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://plus.google.com/u/1/102004938466531482428';" src="img/google.png" class="socialButton" alt="google" id="googleButton"/>
+                              </li>
+                              <li>
+                                  <img onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.linkedin.com/in/po-jen-lai/';" src="img/linkedin.png" class="socialButton" alt="linkedin" id="linkedinButton"/>
+                              </li>
+                              <li>
+                                  <img onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='mailto:boblai@umich.edu';" src="img/email.png" class="socialButton" alt="email" id="emailButton"/>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="footer-col col-md-4">
+                          <h3>Portfolio</h3>
+                          <p>Maintained by <a href="http://startbootstrap.com" style="color: black">Po-Jen Lai</a>.
+                            <br> All rights reserved. 2018 &reg;</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </footer>
+</body>
+</html>
