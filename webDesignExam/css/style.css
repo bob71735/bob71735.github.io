@@ -1,0 +1,21 @@
+body {
+  background-image: url("../images/sun-pattern.png");
+  background-size:cover;
+}
+div {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    display: inline-block;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border: 5px solid blue;
+    padding: 5%;
+    width: 50%;
+}
+img{
+  width: 100%;
+  height: 50%;
+}
+p{
+  display: block;
+}
